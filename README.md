@@ -7,3 +7,4 @@ gpg-playground
   1. `tar czvf - MyFolder | gpg --no-symkey-cache  --symmetric --cipher-algo aes256 -o encrypted.tar.gz.gpg`
   2. `gpg --no-symkey-cache --no-options --output decrypted.tar.gz --decrypt encrypted.tar.gz.gpg`
   3. `tar -xvf decrypted.tar.gz -C MyOutputDirectory`
+  4. DO NOT use GUI software because it may contains old version of gpg which does not support `--no-symkey-cache`
